@@ -1,0 +1,1227 @@
+/* =========================================================
+   VARIABEL PALET WARNA EDITORIAL RETRO-MODERN (ALA NIKO KANE)
+   ========================================================= */
+:root {
+  --cream: #F5F0E6;
+  --cream-light: #FBF8F3;
+  --ink: #141413;
+  --ink-soft: #262523;
+  --ink-muted: #5A5751;
+  --orange: #E04F26;
+  --orange-dark: #C23B16;
+  --mustard: #F2B729;
+  --mustard-hover: #E0A418;
+  --white: #FFFFFF;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+section[id] {
+  scroll-margin-top: 76px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* =========================================================
+   TOP EDITORIAL NAVBAR ALA NIKO KANE
+   ========================================================= */
+.editorial-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: rgba(245, 240, 230, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1.5px solid rgba(20, 20, 19, 0.12);
+  padding: 14px 0;
+}
+
+.nav-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.starburst-icon {
+  color: var(--orange);
+  animation: spinSlow 16s linear infinite;
+}
+
+.quick-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quick-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.quick-nav a:hover {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+}
+
+.btn-mustard-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--mustard);
+  color: var(--ink);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--ink);
+  transition: transform 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-mustard-pill:hover {
+  background: var(--mustard-hover);
+  transform: translateY(-2px);
+}
+
+.btn-dark-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+}
+
+/* =========================================================
+   HERO SECTION ALA NIKO KANE
+   ========================================================= */
+.hero-editorial {
+  padding: 44px 0 64px;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.eyebrow-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+}
+
+.giant-display-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(3.6rem, 8vw, 6.4rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.brush-underline {
+  width: min(100%, 300px);
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.hero-lead {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.btn-outline-editorial {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  padding: 9px 18px;
+  border-radius: var(--radius-pill);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-editorial:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+/* SOCIAL MEDIA HERO */
+.social-hero-wrapper .social-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+  margin-bottom: 8px;
+}
+
+.social-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 8px;
+}
+
+.social-link {
+  background: var(--cream-light);
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  transition: all 0.15s ease;
+}
+
+.social-link:hover {
+  background: var(--orange);
+  color: var(--cream);
+  border-color: var(--orange);
+}
+
+/* KANAN HERO: POTRET & ORNAMEN NIKO KANE */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-card-wrapper {
+  position: relative;
+  width: min(100%, 380px);
+}
+
+.mustard-backdrop-shape {
+  position: absolute;
+  inset: 24px -16px -14px 18px;
+  background: var(--mustard);
+  transform: rotate(-6deg);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.doodle-eye {
+  position: absolute;
+  top: -26px;
+  right: -28px;
+  width: 110px;
+  height: auto;
+  z-index: 12;
+  transform: rotate(8deg);
+}
+
+.spinning-stamp {
+  position: absolute;
+  top: 42%;
+  left: -46px;
+  width: 96px;
+  height: 96px;
+  background: var(--cream);
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 4px 0px var(--ink);
+}
+
+.spinning-stamp svg {
+  animation: spinSlow 14s linear infinite;
+}
+
+.stamp-center {
+  position: absolute;
+  font-size: 1.35rem;
+  color: var(--orange);
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.photo-frame {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  border-radius: 14px;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  overflow: hidden;
+  z-index: 5;
+}
+
+.hero-slides,
+.hero-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  background: rgba(20, 20, 19, 0.8);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  z-index: 6;
+}
+
+.slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(245, 240, 230, 0.4);
+  cursor: pointer;
+}
+
+.slider-dots .dot.active {
+  width: 22px;
+  border-radius: 99px;
+  background: var(--mustard);
+}
+
+.dot-matrix-ornament {
+  position: absolute;
+  bottom: -20px;
+  right: -24px;
+  width: 72px;
+  height: 48px;
+  background-image: radial-gradient(var(--ink) 2.5px, transparent 2.5px);
+  background-size: 12px 12px;
+  z-index: 8;
+}
+
+/* =========================================================
+   COLOR-BLOCK BANDS & EDITORIAL TYPOGRAPHY
+   ========================================================= */
+.band-cream {
+  background-color: var(--cream);
+  color: var(--ink);
+  padding: 72px 0;
+}
+
+.border-top-ink {
+  border-top: 2px solid var(--ink);
+}
+
+.band-charcoal {
+  background-color: var(--ink);
+  color: var(--cream);
+  padding: 72px 0;
+}
+
+.band-orange {
+  background-color: var(--orange);
+  color: var(--cream);
+  padding: 72px 0;
+}
+
+.band-mustard {
+  background-color: var(--mustard);
+  color: var(--ink);
+  padding: 64px 0;
+}
+
+.eyebrow-orange {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.eyebrow-muted {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #A09C94;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.eyebrow-light {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: rgba(245, 240, 230, 0.8);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.eyebrow-ink {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--ink);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.serif-DisplayTitle {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(2rem, 3.6vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.text-cream {
+  color: var(--cream) !important;
+}
+
+.scribble-line-sm,
+.zigzag-yellow,
+.zigzag-orange {
+  margin-bottom: 18px;
+}
+
+.editorial-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.narrative-text {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   POIN 1: ABOUT ME SPLIT GRID
+   ========================================================= */
+.about-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.orange-backdrop-panel {
+  background: var(--orange);
+  padding: 28px 24px 0 24px;
+  border-radius: 12px;
+  border: 2px solid var(--ink);
+  position: relative;
+}
+
+.doodle-crown {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  width: 48px;
+  height: auto;
+  transform: rotate(-10deg);
+}
+
+.about-workspace-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid var(--ink);
+  border-bottom: none;
+  display: block;
+}
+
+.signature-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 0 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.handwritten-sign {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.badge-yellow-globe {
+  background: var(--mustard);
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.56rem;
+  font-weight: 800;
+  line-height: 1.2;
+  transform: rotate(8deg);
+}
+
+.globe-sym {
+  font-size: 1.3rem;
+  margin-top: 3px;
+}
+
+/* MEDIA STRIP */
+.media-strip {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--cream-light);
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--ink);
+  box-shadow: 4px 4px 0px var(--ink);
+  margin-top: 20px;
+}
+
+.strip-dark-mode {
+  background: var(--ink-soft);
+  border-color: rgba(245, 240, 230, 0.25);
+  box-shadow: none;
+  color: var(--cream);
+}
+
+.strip-thumb {
+  width: 96px;
+  height: 76px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1.5px solid var(--ink);
+  flex-shrink: 0;
+}
+
+.strip-info strong {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.strip-info p {
+  font-size: 0.8rem;
+  opacity: 0.88;
+  margin-bottom: 10px;
+}
+
+.btn-inline-video {
+  background: var(--orange);
+  color: var(--cream);
+  border: 1.5px solid var(--ink);
+  padding: 7px 16px;
+  border-radius: var(--radius-pill);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.btn-inline-video:hover {
+  transform: translateY(-2px);
+}
+
+.btn-mustard-solid {
+  background: var(--mustard);
+  color: var(--ink);
+}
+
+/* =========================================================
+   POIN 2: SERVICES / SKILLS DARK BAND ALA NIKO KANE
+   ========================================================= */
+.cv-download-banner-dark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--ink-soft);
+  border: 1px solid rgba(245, 240, 230, 0.2);
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  gap: 16px;
+}
+
+.cv-banner-info strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--cream);
+}
+
+.cv-banner-info p {
+  font-size: 0.8rem;
+  color: #A09C94;
+}
+
+.skill-tabs-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tab-btn {
+  background: transparent;
+  color: #A09C94;
+  border: 1px solid rgba(245, 240, 230, 0.2);
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: var(--mustard);
+  color: var(--ink);
+  border-color: var(--mustard);
+}
+
+.services-columns-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(245, 240, 230, 0.15);
+  border-bottom: 1px solid rgba(245, 240, 230, 0.15);
+  padding: 24px 0;
+  gap: 24px;
+}
+
+.service-col-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 18px;
+  border-right: 1px solid rgba(245, 240, 230, 0.15);
+}
+
+.service-col-item:last-child {
+  border-right: none;
+}
+
+.doodle-service-icon {
+  font-size: 1.6rem;
+  color: var(--mustard);
+}
+
+.service-col-item h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  color: var(--cream);
+}
+
+.service-col-item p {
+  font-size: 0.82rem;
+  color: #B8B3A8;
+  flex: 1;
+}
+
+.prog-track-dark {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.prog-fill-mustard {
+  height: 100%;
+  background: var(--mustard);
+}
+
+.prog-fill-orange {
+  height: 100%;
+  background: var(--orange);
+}
+
+.service-col-item small {
+  font-size: 0.7rem;
+  color: var(--mustard);
+  font-weight: 700;
+}
+
+/* =========================================================
+   POIN 3: HOBBY CARDS ALA "SELECTED WORK" NIKO KANE
+   ========================================================= */
+.side-note {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.editorial-cards-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.editorial-work-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-img-box {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--ink);
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.editorial-work-card:hover .work-img-box {
+  transform: translateY(-4px);
+}
+
+.bg-orange-box { background: var(--orange); }
+.bg-charcoal-box { background: var(--ink); }
+.bg-mustard-box { background: var(--mustard); }
+
+.work-img-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.work-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid rgba(20, 20, 19, 0.2);
+  padding-bottom: 8px;
+}
+
+.work-meta h4 {
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.work-meta span {
+  font-size: 0.74rem;
+  color: var(--ink-muted);
+}
+
+.arrow-circle {
+  font-weight: 800;
+  color: var(--ink) !important;
+}
+
+/* =========================================================
+   POIN 4: SERTIFIKASI BURNT ORANGE BAND ALA "KIND WORDS"
+   ========================================================= */
+.giant-quote-mark {
+  font-family: 'Fraunces', serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--ink);
+  margin-top: 10px;
+}
+
+.orange-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  border-top: 1px solid rgba(245, 240, 230, 0.3);
+  padding-top: 24px;
+}
+
+.orange-cert-card {
+  padding-right: 18px;
+  border-right: 1px solid rgba(245, 240, 230, 0.3);
+}
+
+.orange-cert-card:last-child {
+  border-right: none;
+}
+
+.cert-status-pill {
+  display: inline-block;
+  background: var(--mustard);
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 10px;
+}
+
+.orange-cert-card h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.orange-cert-card p {
+  font-size: 0.85rem;
+  opacity: 0.92;
+  margin-bottom: 12px;
+}
+
+.cert-author {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--mustard);
+}
+
+/* =========================================================
+   POIN 5: REVIEW F&B AYAM GEPREK PAWON TETEH
+   ========================================================= */
+.pill-tag-dark {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--cream);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.review-header-editorial h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.45rem;
+  margin-bottom: 12px;
+}
+
+.review-portrait-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.embedded-video-card {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  box-shadow: 6px 6px 0px var(--orange);
+  background: #000;
+}
+
+.direct-review-video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  display: block;
+  object-fit: cover;
+}
+
+.video-caption-bar {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 8px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review-points h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.audit-list {
+  list-style: none;
+  margin-bottom: 18px;
+}
+
+.audit-list li {
+  font-size: 0.88rem;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.audit-list li::before {
+  content: "✺";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+}
+
+.fnb-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.polaroid-pin {
+  background: var(--cream-light);
+  padding: 8px;
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0px var(--ink);
+}
+
+.polaroid-img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.polaroid-pin small {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+/* =========================================================
+   POIN 6: MUSTARD BAND NON-F&B (MENYUSUL)
+   ========================================================= */
+.mustard-coming-soon-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.mustard-cs-text h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  margin: 6px 0 10px;
+}
+
+.mustard-cs-text p {
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+  max-width: 560px;
+}
+
+/* =========================================================
+   DARK FOOTER ALA NIKO KANE
+   ========================================================= */
+.editorial-footer {
+  background: var(--ink);
+  color: var(--cream);
+  padding: 56px 0 32px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(245, 240, 230, 0.15);
+}
+
+.footer-brand-col p {
+  font-size: 0.82rem;
+  color: #A09C94;
+  margin-top: 10px;
+  max-width: 280px;
+}
+
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-links-col strong {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--mustard);
+  margin-bottom: 4px;
+}
+
+.footer-links-col a,
+.footer-links-col span {
+  color: #D6D1C7;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-circle-badge {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245, 240, 230, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 0.76rem;
+  color: #A09C94;
+}
+
+/* =========================================================
+   MODAL VIDEO & FLOATING MUSIC PLAYER
+   ========================================================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 19, 0.82);
+  backdrop-filter: blur(5px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 16px;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  background: var(--cream);
+  color: var(--ink);
+  width: 100%;
+  max-width: 680px;
+  border-radius: 14px;
+  border: 2px solid var(--ink);
+  overflow: hidden;
+  box-shadow: 8px 8px 0px var(--orange);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.modal-header h3 {
+  font-size: 0.92rem;
+}
+
+.btn-close-modal {
+  background: var(--orange);
+  color: var(--cream);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modal-video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.modal-video-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.modal-video-dock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: var(--ink-soft);
+  color: var(--cream);
+}
+
+.btn-dock-arrow {
+  background: var(--mustard);
+  color: var(--ink);
+  border: none;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.74rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.dock-counter-pill {
+  font-size: 0.74rem;
+}
+
+.modal-narrative-box {
+  padding: 14px 18px;
+  background: var(--cream-light);
+  border-top: 1.5px solid var(--ink);
+}
+
+.narrative-badge {
+  display: inline-block;
+  background: var(--orange);
+  color: var(--cream);
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.modal-narrative-box p {
+  font-size: 0.85rem;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 960px) {
+  .hero-grid,
+  .about-split-grid,
+  .editorial-row,
+  .services-columns-3,
+  .editorial-cards-3,
+  .orange-cert-grid,
+  .review-portrait-layout,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-col-item,
+  .orange-cert-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(245, 240, 230, 0.2);
+    padding-bottom: 18px;
+  }
+  .quick-nav {
+    display: none;
+  }
+  .spinning-stamp {
+    left: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+  .fnb-photo-gallery {
+    grid-template-columns: 1fr;
+  }
+  .social-grid-3x2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cv-download-banner-dark,
+  .media-strip,
+  .mustard-coming-soon-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}

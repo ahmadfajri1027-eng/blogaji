@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Fajri — Creative Portfolio & Editorial Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font Editorial ala Niko Kane: Syne/Space Grotesk (Display Bold), Fraunces (Editorial Serif), Plus Jakarta Sans (Body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP EDITORIAL NAVBAR ALA NIKO KANE -->
+  <header class="editorial-navbar">
+    <div class="nav-container">
+      <a href="#intro" class="brand-mark">
+        <span>AHMAD FAJRI</span>
+        <svg class="starburst-icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12 0L14.2 8.2L21.5 4.5L16.5 11L24 12L16.5 13L21.5 19.5L14.2 15.8L12 24L9.8 15.8L2.5 19.5L7.5 13L0 12L7.5 11L2.5 4.5L9.8 8.2L12 0Z"/>
+        </svg>
+      </a>
+
+      <nav class="quick-nav">
+        <a href="#intro">01. INTRO</a>
+        <a href="#skills">02. SKILLS</a>
+        <a href="#hobby">03. HOBBY</a>
+        <a href="#evidence">04. SERTIF</a>
+        <a href="#review-fnb">05. F&B</a>
+        <a href="#review-nonfnb">06. NON-F&B</a>
+      </nav>
+
+      <a href="#footer-cta" class="btn-mustard-pill">LET'S WORK TOGETHER →</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION ALA NIKO KANE -->
+  <section class="hero-editorial">
+    <div class="container hero-grid">
+      
+      <!-- Kiri: Tipografi Raksasa & Scribble -->
+      <div class="hero-left">
+        <span class="eyebrow-tag">WEB DEV • WEB DESIGNER • CULINARY ENTREPRENEUR</span>
+        <h1 class="giant-display-name">
+          AHMAD<br>FAJRI
+        </h1>
+
+        <!-- Ornamen Garis Coretan Tangan (Hand-drawn Brush) -->
+        <svg class="brush-underline" viewBox="0 0 320 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 16C85 4 210 3 317 12" stroke="#E04F26" stroke-width="5" stroke-linecap="round"/>
+          <path d="M18 19C110 11 230 10 295 17" stroke="#141413" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+
+        <p class="hero-lead">
+          Menciptakan website yang fungsional, antarmuka visual yang berkarakter, serta menyampaikan gagasan di depan publik secara komunikatif dan berdampak.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#skills" class="btn-mustard-pill">VIEW MY WORK & SKILLS →</a>
+          <button class="btn-outline-editorial" onclick="openSingleVideoModal('01. Introduction: Mengenal Ahmad Fajri', 'video_1.mp4', 'Halo semuanya! Saya Ahmad Fajri, bergerak di bidang Web Development, Web Design, dan Culinary Entrepreneurship.')">
+            ▶ WATCH INTRO
+          </button>
+        </div>
+
+        <!-- SOCIAL MEDIA LINKS (GRID 3x2 SIMETRIS) -->
+        <div class="social-hero-wrapper">
+          <span class="social-label">CONNECT WITH ME:</span>
+          <div class="social-grid-3x2">
+            <a href="https://www.instagram.com/ahmadfajri.aja?rpxt=MTR3MWtuZzRkNTR2cA==" target="_blank" class="social-link">Instagram ↗</a>
+            <a href="https://www.tiktok.com/@ajikeenan?_r=1&_t=ZS-9BHr2ePJp1J" target="_blank" class="social-link">TikTok ↗</a>
+            <a href="https://www.facebook.com/share/1CGYV1ojok/" target="_blank" class="social-link">Facebook ↗</a>
+            <a href="https://x.com/ajikeenanlg" target="_blank" class="social-link">X (Twitter) ↗</a>
+            <a href="https://youtube.com/@ajipaleka1510?si=2tV17pgNjxFkp4Ke" target="_blank" class="social-link">YouTube ↗</a>
+    
+          </div>
+        </div>
+      </div>
+
+      <!-- Kanan: Potret Foto dengan Blok Kuning Mustard, Doodle Mata & Dot Matrix -->
+      <div class="hero-right">
+        <div class="photo-card-wrapper">
+
+          <!-- Doodle Mata Oranye ala Niko Kane -->
+          <svg class="doodle-eye" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 45C30 18 90 18 110 45C90 72 30 72 10 45Z" stroke="#E04F26" stroke-width="5" fill="#F5F0E6"/>
+            <circle cx="60" cy="45" r="14" fill="#E04F26"/>
+            <circle cx="60" cy="45" r="5" fill="#F5F0E6"/>
+            <path d="M35 14L28 4M60 10V0M85 14L92 4M105 24L114 16" stroke="#E04F26" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+
+          <!-- Stempel Berputar (Strategy • Code • Design) -->
+          <!-- Stempel Berputar -->
+<div class="spinning-stamp">
+  <svg viewBox="0 0 100 100" width="96" height="96">
+    <defs>
+      <path id="circlePath" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" />
+    </defs>
+    <text font-size="8.6" font-weight="800" fill="#141413" letter-spacing="1.5">
+      <textPath href="#circlePath">STRATEGY • WEB DEV • CULINARY •</textPath>
+    </text>
+  </svg>
+  <span class="stamp-center">✺</span>
+</div>
+
+          <!-- Blok Aksen Kuning Mustard Miring di Belakang Foto -->
+          <div class="mustard-backdrop-shape"></div>
+
+          <!-- Slider Foto Otomatis -->
+          <div class="photo-frame" id="heroSlider">
+            <div class="hero-slides">
+              <div class="hero-slide active">
+                <img src="aji1.jpg" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80'" alt="Ahmad Fajri Slide 1" class="hero-img">
+              </div>
+              <div class="hero-slide">
+                <img src="aji3.jpg" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=700&q=80'" alt="Ahmad Fajri Slide 2" class="hero-img">
+              </div>
+              <div class="hero-slide">
+                <img src="aji2.jpg" onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=80'" alt="Ahmad Fajri Slide 3" class="hero-img">
+              </div>
+            </div>
+
+            <div class="slider-dots" id="heroSliderDots">
+              <span class="dot active" onclick="goToHeroSlide(0)"></span>
+              <span class="dot" onclick="goToHeroSlide(1)"></span>
+              <span class="dot" onclick="goToHeroSlide(2)"></span>
+            </div>
+          </div>
+
+          <!-- Ornamen Dot Grid Hitam Kanan Bawah -->
+          <div class="dot-matrix-ornament"></div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       POIN 1: INTRO & ABOUT ME (SPLIT EDITORIAL ALA NIKO KANE)
+       ========================================================= -->
+  <section id="intro" class="band-cream border-top-ink">
+    <div class="container about-split-grid">
+      
+      <!-- Kolom Visual Kiri dengan Frame Oranye & Doodle Mahkota -->
+      <div class="about-visual-col">
+        <div class="orange-backdrop-panel">
+          <svg class="doodle-crown" viewBox="0 0 60 40" fill="none">
+            <path d="M8 34L4 10L20 22L30 6L40 22L56 10L52 34H8Z" stroke="#141413" stroke-width="3" fill="#F5F0E6"/>
+          </svg>
+          <!-- FOTO ANDA SUDAH DIMASUKKAN DI SINI -->
+          <img src="aji1.jpg" alt="Ahmad Fajri" class="about-workspace-img" style="object-fit: cover; object-position: top;">
+        </div>
+      </div>
+
+      <!-- Kolom Narasi Kanan -->
+      <div class="about-text-col">
+        <span class="eyebrow-orange">01. INTRO & ABOUT ME</span>
+        <h2 class="serif-DisplayTitle">
+          Code with purpose.<br>
+          Speak with <em>soul.</em>
+        </h2>
+        <svg class="scribble-line-sm" viewBox="0 0 180 14" fill="none">
+          <path d="M2 10C55 2 125 2 178 9" stroke="#E04F26" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+
+        <p class="narrative-text">
+  Halo! Saya <strong>Ahmad Fajri</strong>. Saya memadukan ketajaman logika pemrograman dalam <strong>Web Development</strong>, kepekaan estetika tata letak sebagai <strong>Web Designer</strong>, serta wawasan strategi dan inovasi dalam dunia <strong>Culinary Entrepreneurship</strong>. Bagi saya, sebuah produk maupun bisnis yang hebat tidak hanya harus berjalan mulus dan terlihat memukau, tetapi juga harus mampu memberikan nilai nyata dan pengalaman terbaik bagi audiens.
+</p>
+
+        <div class="signature-row">
+          <span class="handwritten-sign">Ahmad Fajri</span>
+          <div class="badge-yellow-globe">
+            <span>BASED IN INDONESIA<br>WORKING DIGITAL</span>
+            <div class="globe-sym">🌐</div>
+          </div>
+        </div>
+
+        <div class="media-strip">
+          <img src="ketos.jpg" alt="Intro Video Thumb" class="strip-thumb">
+          <div class="strip-info">
+            <strong>Video Perkenalan Diri</strong>
+            <p></p>
+            <button class="btn-inline-video" onclick="openSingleVideoModal('', 'video_1.mp4', 'Cuplikan video perkenalan Ahmad Fajri,')">
+  ▶ Tonton Video 
+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       POIN 2: SKILL & KETERAMPILAN (DARK CHARCOAL BAND ALA "SERVICES")
+       ========================================================= -->
+  <!-- =========================================================
+       POIN 2: SKILL & KETERAMPILAN (DARK CHARCOAL BAND ALA "SERVICES")
+       ========================================================= -->
+  <section id="skills" class="band-charcoal">
+    <div class="container">
+      <div class="editorial-row">
+        
+        <div class="editorial-col-title">
+          <span class="eyebrow-muted">02. SKILL & KETERAMPILAN</span>
+          
+          <!-- UBAH TEKS DI DALAM H2 MENJADI KOSONG / SPASI (&nbsp;) -->
+          <h2 class="serif-DisplayTitle text-cream">&nbsp;</h2>
+
+          <svg class="zigzag-yellow" viewBox="0 0 140 16" fill="none">
+            <path d="M2 12L28 4L52 12L80 4L106 12L138 4" stroke="#F2B729" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+
+          <div class="skill-tabs-vertical">
+            <button class="tab-btn active" onclick="filterSkill('all', this)">Semua Skill (3)</button>
+            <button class="tab-btn" onclick="filterSkill('teknis', this)">Web Dev & Design</button>
+            <button class="tab-btn" onclick="filterSkill('kuliner', this)">Culinary Entrepreneurship</button>
+          </div>
+        </div>
+
+        <div class="editorial-col-body">
+          <!-- Banner Download CV -->
+          <div class="cv-download-banner-dark">
+            <div class="cv-banner-info">
+              <strong>Curriculum Vitae Resmi — Ahmad Fajri</strong>
+              <p>Unduh resume lengkap dalam format PDF untuk melihat rekam jejak proyek web dan pengalaman komunikasi.</p>
+            </div>
+            <a href="cv_ahmad_fajri.pdf" download="CV_Ahmad_Fajri.pdf" class="btn-mustard-pill">
+              ⬇ DOWNLOAD CV (PDF)
+            </a>
+          </div>
+
+          <!-- 3 Kolom Keahlian Utama -->
+          <div class="services-columns-3" id="skillGrid">
+            
+            <div class="service-col-item soft-item" data-category="teknis">
+              <div class="doodle-service-icon">💻</div>
+              <h4>Web Development</h4>
+              <p>Membangun website responsif, cepat, dan terstruktur dengan HTML5, CSS3, JavaScript, serta arsitektur kode yang bersih dan mudah dikembangkan.</p>
+              <div class="prog-track-dark"><div class="prog-fill-mustard" style="width: 90%;"></div></div>
+              <small>Frontend & Fullstack Web Architecture</small>
+            </div>
+            <!-- Tambahkan di dalam kartu Web Development atau kartu proyek -->
+<div class="project-preview-card" style="margin-top: 15px;">
+  <span class="pill-tag" style="background: #E04F26; color: #fff;">PROYEK WEB</span>
+  <h4 style="margin: 10px 0 5px 0;">Aplikasi Web AXYZ Laser</h4>
+  <p style="font-size: 0.85rem; color: #555;">
+    Sistem webuntuk mengelola pemesanan layanan laser cutting, menampilkan katalog produk, dan memproses pembayaran secara online.
+  </p>
+  <button class="btn-inline-video" onclick="window.open('https://axyz-laser-cutting-911974652775.asia-southeast1.run.app')">
+    🌐 Buka Demo Web Interaktif →
+  </button>
+</div>
+
+            <div class="service-col-item soft-item" data-category="teknis">
+              <div class="doodle-service-icon">👁️</div>
+              <h4>Web Designer</h4>
+              <p>Merancang antarmuka visual (UI/UX) yang estetis, pemilihan tipografi editorial yang kuat, serta pengalaman pengguna yang intuitif di semua perangkat.</p>
+              <div class="prog-track-dark"><div class="prog-fill-orange" style="width: 92%;"></div></div>
+              <small>UI/UX Design, Wireframing & Visual Systems</small>
+            </div>
+
+            <div class="service-col-item soft-item" data-category="kuliner">
+              <div class="doodle-service-icon">🍳</div>
+              <h4>Culinary Entrepreneurship</h4>
+              <p>Mengembangkan ide usaha kuliner, manajemen operasional F&B, penyusunan strategi pemasaran produk makanan, serta analisis kepuasan pelanggan.</p>
+              <div class="prog-track-dark"><div class="prog-fill-mustard" style="width: 95%;"></div></div>
+              <small>F&B Management, Branding & Culinary Strategy</small>
+            </div>
+            <!-- CONTOH KARTU SKILL WEB DEVELOPMENT DENGAN FITUR FOTO -->
+<div class="skill-card-editorial">
+  <div class="skill-card-header">
+    <span class="pill-tag">Culinary Entrepreneurship</span>
+    <h4>hasil kerja saya</h4>
+  </div>
+  
+  <p class="skill-desc">
+    dokumentasi foto bisnis saya
+  </p>
+
+  <!-- FITUR GALERI FOTO DOKUMENTASI PROYEK SKILL -->
+  <div class="skill-photo-gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 15px;">
+    
+    <!-- FOTO PROYEK 1 -->
+    <div class="polaroid-pin" style="padding: 6px; background: #fff; border: 2px solid #141413; border-radius: 8px;">
+      <img src="web_skill1.jpg" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80'" alt="Dokumentasi Skill Web 1" style="width: 100%; height: 90px; object-fit: cover; border-radius: 4px;">
+      <small style="display: block; text-align: center; font-weight: 700; margin-top: 5px; font-size: 0.75rem;">01. foto bisnis es leci</small>
+    </div>
+
+    <!-- FOTO PROYEK 2 -->
+    <div class="polaroid-pin" style="padding: 6px; background: #fff; border: 2px solid #141413; border-radius: 8px;">
+      <img src="web_skill2.jpg" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80'" alt="Dokumentasi Skill Web 2" style="width: 100%; height: 90px; object-fit: cover; border-radius: 4px;">
+      <small style="display: block; text-align: center; font-weight: 700; margin-top: 5px; font-size: 0.75rem;">02. foto bisnis es cream pisang ijo
+      </small>
+    </div>
+
+  </div>
+</div>
+
+          </div>
+
+          <div class="skill-video-banner-card" style="background: #1e1e1e; padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 20px;">
+  <!-- Thumbnail Video -->
+  <div class="video-thumb-box" style="flex: 0 0 120px; height: 80px; overflow: hidden; border-radius: 8px;">
+    <img src="aji2.jpg" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=300&q=80'" alt="Demo Web Project" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+
+  <!-- Detail Teks & Tombol Putar -->
+  <div class="video-info-box">
+    <h4 style="color: #fff; margin: 0 0 6px 0; font-size: 1.1rem;">Video Proyek Web & Skill</h4>
+    <p style="color: #ccc; margin: 0 0 12px 0; font-size: 0.85rem;">
+      Tonton cuplikan karya pengembangan website dan Culinary Entrepreneurship Ahmad Fajri[cite: 9].
+    </p>
+
+    <!-- Tombol Pemutar 1 Video -->
+    <button class="btn-yellow-play" onclick="openSingleVideoModal('Demo Proyek Web & AI Studio', 'video_skil.mp4', 'Cuplikan demo pengerjaan proyek web interaktif menggunakan Google AI Studio.')" style="background: #facc15; color: #000; border: none; padding: 8px 16px; border-radius: 20px; font-weight: 700; cursor: pointer;">
+      ▶ Tonton Video Showcase Skill
+    </button>
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- =========================================================
+       POIN 3: HOBBY & INTERESTS (CREAM BAND ALA "SELECTED WORK")
+       ========================================================= -->
+  <section id="hobby" class="band-cream">
+    <div class="container">
+      <div class="editorial-row">
+        
+        <div class="editorial-col-title">
+          <span class="eyebrow-orange">03. HOBBY & INTERESTS</span>
+          <h2 class="serif-DisplayTitle">
+            Selected<br>passions
+          </h2>
+          <svg class="zigzag-orange" viewBox="0 0 130 16" fill="none">
+            <path d="M2 12L35 4L65 12L105 4L128 10" stroke="#E04F26" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+          <p class="side-note">
+  Kombinasi sepak bola, gaming, dan rutin nge-gym melatih stamina fisik, refleks taktis, serta disiplin mental saya sehari-hari.
+</p>
+        </div>
+
+        <div class="editorial-col-body">
+          <div class="editorial-cards-3">
+            
+            <div class="editorial-work-card">
+  <div class="work-img-box bg-orange-box">
+    <!-- GANTI GAMBAR DI SINI -->
+    <img src="sepakbola.jpg" alt="Sepak Bola Ahmad Fajri" style="object-fit: cover; object-position: center;">
+  </div>
+  <div class="work-meta">
+    <div>
+      <h4>SEPAK BOLA</h4>
+      <span>Teamwork, Stamina & Taktik Lapangan</span>
+    </div>
+    <span class="arrow-circle">→</span>
+  </div>
+</div>
+
+            <div class="editorial-work-card">
+              <div class="work-img-box bg-charcoal-box">
+                <img src="gaming.jpg" alt="Maen Game">
+              </div>
+              <div class="work-meta">
+                <div>
+                  <h4>MAEN GAME (GAMING)</h4>
+                  <span>Refleks Cepat, Strategi & Problem Solving</span>
+                </div>
+                <span class="arrow-circle">→</span>
+              </div>
+            </div>
+
+           <div class="editorial-work-card">
+  <div class="work-img-box bg-mustard-box">
+    <!-- GANTI GAMBAR DUMBBELL MENJADI FOTO GYM KAMU -->
+    <img src="gym.jpg" alt="Ahmad Fajri Gym" style="object-fit: cover; object-position: center;">
+  </div>
+  <div class="work-meta">
+    <div>
+      <h4>GYM</h4>
+      <span>Melatih Otot dan Fisik sekaligus Fokus Mental</span>
+    </div>
+    <span class="arrow-circle">→</span>
+  </div>
+</div>
+
+          </div>
+
+         <div class="embedded-video-card" style="width: 100%; max-width: 540px; margin-top: 20px; border-radius: 12px; overflow: hidden; border: 2px solid #141413; box-shadow: 6px 6px 0px #E04F26;">
+  <video controls style="width: 100%; display: block; aspect-ratio: 16/9; background: #000;">
+    <source src="hobby.mp4" type="video/mp4">
+    Browser Anda tidak mendukung pemutar video HTML5.
+  </video>
+  <div style="background: #141413; color: #F5F0E6; padding: 10px 14px; font-size: 0.8rem; font-weight: 700;">
+    ⚽ Documentasi Hobi: Aksi Sepak Bola & Olahraga Ahmad Fajri
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       POIN 4: EVIDENCE OF SKILL (BURNT ORANGE BAND ALA "KIND WORDS")
+       ========================================================= -->
+ <!-- =========================================================
+       POIN 4: EVIDENCE OF SKILL / CERTIFICATES (ORANGE BAND)
+       ========================================================= -->
+  <!-- =========================================================
+       POIN 4: EVIDENCE OF SKILL / CERTIFICATES (ORANGE BAND)
+       ========================================================= -->
+  <section id="certificates" class="band-orange">
+    <div class="container">
+      <div class="editorial-row">
+        
+        <div class="editorial-col-title">
+          <span class="eyebrow-yellow">04. EVIDENCE OF SKILL</span>
+          <h2 class="serif-DisplayTitle light-text">
+            Official<br>certificates
+          </h2>
+          <svg class="zigzag-yellow" viewBox="0 0 130 16" fill="none">
+            <path d="M2 12L35 4L65 12L105 4" stroke="#FCE182" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+          <div class="quote-mark">“</div>
+        </div>
+
+        <div class="editorial-col-body">
+          <p class="intro-lead-light">
+            Bagian ini memuat seluruh dokumen sertifikasi resmi, pelatihan, lisensi kompetensi, serta piagam penghargaan yang telah saya raih di berbagai bidang.
+          </p>
+
+          <div class="cert-grid-2col">
+            <!-- SERTIFIKAT 1 (UMUM) -->
+            <div class="cert-card-editorial">
+              <span class="pill-tag-verified">✔ VERIFIED</span>
+              <h3 class="cert-card-title">Sertifikat & Lisensi Kompetensi</h3>
+              <p class="cert-card-desc">
+                “Dokumen resmi bukti pencapaian pelatihan, lisensi, dan sertifikasi keahlian yang telah divalidasi.”
+              </p>
+              <button class="btn-cert-link" onclick="openSingleVideoModal('Sertifikat & Lisensi Kompetensi', 'sertifikat_webinar.pdf', 'Pratinjau dokumen sertifikat kompetensi Ahmad Fajri.')">
+                LIHAT DOKUMEN SERTIFIKAT #01 →
+              </button>
+            </div>
+
+            <!-- SERTIFIKAT 2 (UMUM) -->
+            <div class="cert-card-editorial">
+              <span class="pill-tag-verified">✔ VERIFIED</span>
+              <h3 class="cert-card-title">Piagam Penghargaan & Program Resmi</h3>
+              <p class="cert-card-desc">
+                “Dokumen resmi bukti keikutsertaan program, apresiasi kegiatan, dan piagam penghargaan yang diraih.”
+              </p>
+              <button class="btn-cert-link" onclick="openSingleVideoModal('Piagam Penghargaan & Program', 'sertifikat_ketos.pdf', 'Pratinjau dokumen piagam penghargaan Ahmad Fajri.')">
+                LIHAT DOKUMEN SERTIFIKAT #02 →
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- =========================================================
+       POIN 5: REVIEW KULINER F&B (CREAM BAND ALA "INSIGHTS")
+       ========================================================= -->
+  <section id="review-fnb" class="band-cream">
+    <div class="container">
+      <div class="editorial-row">
+        
+        <div class="editorial-col-title">
+          <span class="eyebrow-orange">05. REVIEW KULINER F&B</span>
+          <h2 class="serif-DisplayTitle">
+            Culinary<br>review &<br>insights
+          </h2>
+          <svg class="zigzag-orange" viewBox="0 0 130 16" fill="none">
+            <path d="M2 12L35 4L65 12L105 4" stroke="#E04F26" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+          <span class="pill-tag-dark">STUDI KASUS KULINER LOKAL</span>
+        </div>
+
+        <div class="editorial-col-body">
+          <div class="review-header-editorial">
+            <span class="eyebrow-orange">FOOD & BEVERAGE AUDIT</span>
+            <h3>Review Ayam Geprek Pawon Teteh (Gegerkalong) — Gurih Bawang Gorengnya Juara & Sambalnya Nagih!</h3>
+          </div>
+
+          <p class="narrative-text">
+            Pada ulasan kuliner F&B ini, saya mengulas langsung <strong>Ayam Geprek Pawon Teteh</strong> di kawasan Gegerkalong, Bandung. Destinasi kuliner ini terkenal dengan olahan ayam goreng tepung yang <em>crispy</em> dan <em>juicy</em>, porsi melimpah, serta keunikan ciri khas taburan bawang putih goreng yang sangat royal dan gurih. Dipadukan dengan aneka pilihan sambal segar seperti sambal daun jeruk, tempat ini menjadi rekomendasi utama bagi para pencinta kuliner pedas.
+          </p>
+
+          <div class="review-portrait-layout">
+            <!-- Pemutar Video Review F&B -->
+            <div class="embedded-video-card">
+              <video class="direct-review-video" controls poster="geprek1.jpg">
+                <source src="ReviewPawonTeteh.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video HTML5.
+              </video>
+              <div class="video-caption-bar">
+                <span>🍗 Vlog Review Ayam Geprek Pawon Teteh Gegerkalong</span>
+              </div>
+            </div>
+
+            <!-- Galeri Foto Polaroid 3 Kartu (Samping Video / Tampilan Awal) -->
+            <div class="fnb-photo-gallery">
+              <div class="polaroid-pin">
+                <img src="geprek1.jpg" onerror="this.src='https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=400&q=80'" alt="Ayam Geprek Pawon Teteh 1" class="polaroid-img">
+                <small>01. Paket Geprek Komplit</small>
+              </div>
+              <div class="polaroid-pin">
+                <img src="geprek2.jpg" onerror="this.src='https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=400&q=80'" alt="Sambal Pawon Teteh" class="polaroid-img">
+                <small>02. Sambal Melimpah</small>
+              </div>
+              <div class="polaroid-pin">
+                <img src="geprek3.jpg" onerror="this.src='https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=400&q=80'" alt="Tekstur Krispi" class="polaroid-img">
+                <small>03. Paket Ayam Geprek</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- =========================================================
+       POIN 6: REVIEW NON-F&B (MUSTARD GOLD BAND ALA "HAVE A PROJECT")
+       ========================================================= -->
+  <!-- =========================================================
+       POIN 6: REVIEW NON-F&B (MUSTARD BAND)
+       ========================================================= -->
+  <section id="review-non-fnb" class="band-mustard">
+    <div class="container">
+      <div class="editorial-row">
+        
+        <div class="editorial-col-title">
+          <span class="eyebrow-dark">06. REVIEW NON-F&B</span>
+          <h2 class="serif-DisplayTitle">
+            Gear &<br>Essentials<br>Review
+          </h2>
+          <svg class="underline-dark" viewBox="0 0 200 12" fill="none">
+            <path d="M2 8C50 2 150 2 198 8" stroke="#141413" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="editorial-col-body">
+          <div class="review-header-editorial">
+            <span class="pill-tag-dark">REVIEW PRODUK & GEAR</span>
+            <h3>Ulasan Produk Non-F&B Pilihan Ahmad Fajri</h3>
+          </div>
+
+          <p class="narrative-text">
+            Ulasan produk non-F&B andalan sehari-hari, mulai dari perangkat penunjang <strong>Web Development</strong>, <em>gaming gear</em>, hingga perlengkapan olahraga sepak bola.
+          </p>
+
+          <div class="review-portrait-layout" style="margin-top: 20px;">
+            <!-- Pemutar Video Review Non-F&B -->
+            <div class="embedded-video-card" style="width: 100%; max-width: 650px; border-radius: 12px; overflow: hidden; border: 2px solid #141413; box-shadow: 6px 6px 0px #141413;">
+              <video controls style="width: 100%; display: block; aspect-ratio: 16/9; background: #000;">
+                <!-- GANTI DENGAN NAMA FILE VIDEO NON-F&B KAMU -->
+                <source src="non_fnb.mp4" type="video/mp4">
+                Browser Anda tidak mendukung pemutar video HTML5.
+              </video>
+              <div style="background: #141413; color: #F5F0E6; padding: 10px 14px; font-size: 0.85rem; font-weight: 700;">
+                📦 Vlog Review Gear & Essentials Ahmad Fajri
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px;">
+            <a href="#top" class="btn-dark-pill" style="display: inline-block; padding: 10px 20px; background: #141413; color: #fff; text-decoration: none; border-radius: 20px; font-weight: 700;">KEMBALI KE ATAS ↑</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- =========================================================
+       DARK EDITORIAL FOOTER ALA NIKO KANE
+       ========================================================= -->
+  <footer id="footer-cta" class="editorial-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+  <div class="brand-mark text-cream">
+    <span>AHMAD FAJRI</span>
+    <span style="color: var(--orange);">✺</span>
+  </div>
+  <p>Web Developer, Web Designer & Culinary Entrepreneur yang berfokus menciptakan karya digital berdampak.</p>
+</div>
+
+<div class="footer-links-col">
+  <strong>EXPERTISE</strong>
+  <span>Web Development</span>
+  <span>Web Designer (UI/UX)</span>
+  <span>Culinary Entrepreneurship</span>
+</div>
+
+
+      <div class="footer-links-col">
+        <strong>NAVIGATION</strong>
+        <a href="#intro">01. Intro & About</a>
+        <a href="#skills">02. Skills</a>
+        <a href="#hobby">03. Hobby</a>
+        <a href="#evidence">04. Sertifikasi</a>
+        <a href="#review-fnb">05. Review F&B</a>
+        <a href="#review-nonfnb">06. Review Non-F&B</a>
+      </div>
+
+  
+
+      <div class="footer-stamp-col">
+        <div class="footer-circle-badge">
+          <span>CODE & DESIGN<br>THAT MEANS<br>SOMETHING ★</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 <strong>Ahmad Fajri</strong>. All rights reserved.</p>
+      <p>Editorial Portfolio Blog</p>
+    </div>
+  </footer>
+
+  <!-- MODAL VIDEO INTERAKTIF -->
+  <div id="videoModal" class="modal-overlay" onclick="closeModalOnBg(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Judul Video</h3>
+        <button class="btn-close-modal" onclick="closeVideoModal()">×</button>
+      </div>
+
+      <div class="modal-video-wrap">
+        <iframe id="modalDriveFrame" src="" allow="autoplay" allowfullscreen></iframe>
+      </div>
+
+      <div class="modal-video-dock" id="modalVideoNavBar" style="display: none;">
+        <button class="btn-dock-arrow" onclick="prevModalVideo()">◀ Sebelumnya</button>
+        <span class="dock-counter-pill" id="videoCounterPill">Video 1 dari 2</span>
+        <button class="btn-dock-arrow" onclick="nextModalVideo()">Selanjutnya ▶</button>
+      </div>
+
+      <div class="modal-narrative-box">
+        <span class="narrative-badge">Transkrip Narasi Video</span>
+        <p id="modalNarrativeText">Deskripsi narasi video akan tampil di sini.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
